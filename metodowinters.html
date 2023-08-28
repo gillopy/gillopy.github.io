@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Método de Winters</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Econometria con CS50B</h1>
+  </header>
+
+  <div class="container">
+    <h2>Método de Winters</h2>
+    <p>El método de Winters es un enfoque de suavización exponencial utilizado para pronosticar series de tiempo con
+      tendencia y estacionalidad. Agrega un componente estacional al método de Holt para capturar las variaciones
+      regulares que ocurren en la serie de tiempo en el mismo período cada año.</p>
+
+    <h3>Ejemplo</h3>
+    <p>Supongamos que tenemos los mismos datos mensuales de ventas que en los ejemplos anteriores. Aplicando el método
+      de Winters, el cálculo del pronóstico para abril sería:</p>
+    <ul>
+      <li>Pronóstico marzo: 115 unidades</li>
+      <li>Nivel abril: 115 + (0.3 * (130 - 115)) = 119.5 unidades</li>
+      <li>Estacionalidad abril: 0.3 * (130 - 115) + (1 - 0.3) * estacionalidad marzo = 4.5 unidades</li>
+      <li>Pronóstico abril: 119.5 + 4.5 = 124 unidades</li>
+    </ul>
+
+    <img
+      src="https://support.minitab.com/es-mx/minitab/20/media/generated-content/images/winters_method_utility_usage.PNG"
+      alt="Imagen de ejemplo">
+    <a href="index.html">Volver a la página principal</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
