@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Método de Holt</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Econometria con CS50B</h1>
+  </header>
+
+  <div class="container">
+    <h2>Método de Holt</h2>
+    <p>El método de Holt es un enfoque de suavización exponencial utilizado para pronosticar series de tiempo con
+      tendencia lineal. A diferencia de la suavización exponencial simple, el método de Holt utiliza dos componentes:
+      nivel y pendiente, para capturar tanto la tendencia como el nivel de la serie de tiempo.</p>
+
+    <h3>Ejemplo</h3>
+    <p>Supongamos que tenemos los mismos datos mensuales de ventas que en los ejemplos anteriores. Aplicando el método
+      de Holt, el cálculo del pronóstico para abril sería:</p>
+    <ul>
+      <li>Pronóstico marzo: 115 unidades</li>
+      <li>Nivel abril: 115 + (0.3 * (130 - 115)) = 119.5 unidades</li>
+      <li>Pronóstico abril: 119.5 + (0.3 * (130 - 115)) = 124 unidades</li>
+    </ul>
+
+    <img src="https://www.gestiondeoperaciones.net/wp-content/uploads/2015/08/Suavizaci%C3%B3n-Exponencial-Dob.gif"
+      alt="Imagen de ejemplo">
+    <a href="index.html">Volver a la página principal</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
